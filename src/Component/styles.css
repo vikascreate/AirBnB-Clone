@@ -28,4 +28,24 @@ body{
     margin-left: 3%;
     max-width: 400px;
 }
-    
+.card{
+width:175px;
+font-size:12px;
+}   
+.card--img{
+    width:200px;
+    border-radius: 9px;
+}
+.card--stats{
+    display:flex;
+    align-items: center;
+}
+.card--star{
+    height:14px;
+}
+.gray{
+    color:#918E9B;
+}
+.bold{
+    font-weight:bold;
+}
