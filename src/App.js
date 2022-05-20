@@ -2,18 +2,20 @@ import NavBar from "./Component/NavBar";
 import Hero from "./Component/Hero";
 import Card from "./Component/Card";
 import './Component/styles.css';
+import data from './data';
 function App() {
+  const mapstuff=data.map(item => {
+    return <Card 
+    key={item.id}
+       {...item}/>
+  })
   return (
     <div className="App">
      <NavBar/>
-     {/* <Hero/> */}
-     <Card
-     img="image 12.png"
-     Rating="5.0"
-     reviewCount={6}
-     country="USA"
-     title="Life Lessons with Katie Zaferes"
-     price="From $136"/>
+     <Hero/>
+     <section className="cards-list">
+     {mapstuff}
+     </section>
     </div>
   );
 }
